@@ -4,12 +4,20 @@ PLUGINS ACCESIBILIDAD
   Plugins -Accesibilidad-studio Code
     Web Accessibility
 
-Datos a tener en cuenta:
+Datos a tener en cuenta en accesibilidad:
 
 Contraste de color:
   Las pautas de accesibilidad del contenido web establecen en su nivel AA los ratios de contraste suficientes de 4.5  para textos menores a 18 puntos y de 3 para textos mayores a 18 puntos.
     COMPROBAR RATIO COLOR
   https://app.contrast-finder.org/result.html?foreground=%23343C34&background=%23DFF0D8&ratio=4.5&isBackgroundTested=false&algo=Rgb&lang=es
 
+Aria:
+  https://web.ua.es/es/accesibilidad/accesibilidad-web/wai-aria.html
 
+JS:
+  https://developer.mozilla.org/es/docs/Learn/Accessibility/CSS_and_JavaScript
+  https://developer.mozilla.org/es/docs/Learn/Accessibility/HTML#volver_a_a%C3%B1adir_la_accesibilidad_del_teclado
 
+documento texto en general:
+  https://webdesign.tutsplus.com/es/articles/designing-accessible-content-typography-font-styling-and-structure--cms-31934
+  
