@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Enlaces</h1>
+
+    <p>Esto es un enlace a <a href="https://www.mozilla.org">Mozilla</a>.</p>
+    <p>Otro enlace, a la <a href="https://developer.mozilla.org">Mozilla
+        Developer Network</a>.</p>
+
+    <h2>Botones</h2>
+
+    <p>
+      <button data-message="Esto es del primer botón">¡Haz clic!</button>
+      <button data-message="Esto es del segundo botón">¡Haz clic aquí también!</button>
+      <button data-message="Esto es del tercer botón">Y aquí!</button>
+    </p>
+    <p>Las ballenas son criaturas realmente impresionantes. <a href="whales.html">Aprende más sobre las ballenas</a>.</p>
+    <h2>Formulario</h2>
+
+    <form>
+      <div>
+        <label for="nombre">Entra tu nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div>
+        <label for="edad">Entra tu edad:</label>
+        <input type="text" id="edad" name="edad">
+      </div>
+      <div>
+        <label for="humor">Elige tu humor:</label>
+        <select id="humor" name="humor">
+          <option>Feliz</option>
+          <option>Triste</option>
+          <option>Enfadado/a</option>
+          <option>Preocupado/a</option>
+        </select>
+      </div>
+    </form>
+    <script>
+      //convierte elemento sen tabulables
+      document.onkeydown = function(e)
+      {
+        if(e.keyCode === 13)
+        { // La tecla Enter/Return
+        document.activeElement.click();
+        }
+      };
+    </script>
+
+
+<p>Enlace que abre una nueva pestaña o ventana</p>
+
+<a target="_blank" href="https://www.wikipedia.org/">Wikipedia (se abre en una nueva ventana)</a>
+<p>Enlace a un recurso que no es HTML</p>
+<a target="_blank" href="2017-annual-report.ppt">Informe anual de 2017 (PowerPoint)</a>
+
+
+  </body>
+</html>
