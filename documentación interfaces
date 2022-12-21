@@ -1,0 +1,15 @@
+PLUGINS ACCESIBILIDAD
+  Plugins -Accesibilidad-navegador
+    Comprobador de accesibilidad de Siteimprove
+  Plugins -Accesibilidad-studio Code
+    Web Accessibility
+
+Datos a tener en cuenta:
+
+Contraste de color:
+  Las pautas de accesibilidad del contenido web establecen en su nivel AA los ratios de contraste suficientes de 4.5  para textos menores a 18 puntos y de 3 para textos mayores a 18 puntos.
+    COMPROBAR RATIO COLOR
+  https://app.contrast-finder.org/result.html?foreground=%23343C34&background=%23DFF0D8&ratio=4.5&isBackgroundTested=false&algo=Rgb&lang=es
+
+
+
