@@ -15,5 +15,13 @@ class Csv{
 		}
 		return $result;
 	}
+
+	public function arrayToCsv($array){
+		$fp = fopen($this->csv_file, 'w');
+		foreach ($array as $fields) {
+			fputcsv($fp, $fields, ";");
+		}
+		fclose($fp);
+	}
 }
 ?>
