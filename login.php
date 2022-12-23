@@ -22,13 +22,26 @@
                     <li></li>
             </ul>
 			<div class="login">
+				<h1>Hola</h1>
 				<form method="get" action="action/login.php">
-					<label for="user">Usuario:</label><br>
-					<input type="text" name="user" id="user"><br>
-					<label for="pass">Contraseña:</label><br>
-					<input type="password" name="pass" id="pass"><br>
-					<input type="submit">
-				</form>
+			<div class="form">
+				<input type="text" name="user" autocomplete="off" required />
+				<label for="text" class="label-name">
+					<span class="content-name">
+					Usuario
+					</span>
+				</label>
+</div><br>
+<div class="form">
+				<input type="password" name="pass" autocomplete="off" required />
+				<label for="text" class="label-name">
+					<span class="content-name">
+					Contraseña
+					</span>
+				</label>
+			</div><br>
+			<input type="submit" value="Iniciar Sesión">
+			</form>
 			</div>
     </div >
 </body>
