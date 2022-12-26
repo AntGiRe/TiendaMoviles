@@ -29,3 +29,27 @@
 .tab-content.active {
   display: block;
 }
+
+
+/*codigo básico de dividir la pantalla por sia caso y o si lo queremso modificar*/
+/*
+#parte1 {
+  width: 50%;
+  float: left;
+}
+
+#parte2 {
+  width: 50%;
+  float: right;
+}
+
+#parte3 {
+  width: 50%;
+  float: left;
+}
+
+#parte4 {
+  width: 50%;
+  float: right;
+}
+*/
