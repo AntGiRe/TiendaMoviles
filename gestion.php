@@ -20,15 +20,15 @@
 		<div id="tabs" role="tablist">
 
 			<nav>
-				<div class="tab " role="tab" aria-controls="tab1-content" aria-label="Primera pestaña para insertar reparaciones de un nuevo cliente" tabindex="0">Insertar Reparación Cliente</div>
+				<div class="tab " role="tab" aria-controls="tab1-content" aria-label="Primera pestaña para insertar reparaciones de un nuevo cliente" tabindex="0"  aria-selected="true">Insertar Reparación Cliente</div>
 
-				<div class="tab " role="tab" aria-controls="tab2-content" aria-label="Segunda pestaña para asignarse reparaciones por parte del técnico" tabindex="0">Reparar pendientes</div>
+				<div class="tab " role="tab" aria-controls="tab2-content" aria-label="Segunda pestaña para asignarse reparaciones por parte del técnico" tabindex="0" aria-selected="false">Reparar pendientes</div>
 
-				<div class="tab" role="tab" aria-controls="tab3-content" aria-label="Tercera pestaña para gestionar lo referentes a las reparaciones" tabindex="0">Gestión Reparaciones Técnico</div>
+				<div class="tab" role="tab" aria-controls="tab3-content" aria-label="Tercera pestaña para gestionar lo referentes a las reparaciones" tabindex="0" aria-selected="false">Gestión Reparaciones Técnico</div>
 
-				<div class="tab" role="tab" aria-controls="tab4-content" aria-label="Cuarta pestaña para ver la lista de reparaciones del técnico" tabindex="0">Mis reparaciones</div>
+				<div class="tab" role="tab" aria-controls="tab4-content" aria-label="Cuarta pestaña para ver la lista de reparaciones del técnico" tabindex="0" aria-selected="false">Mis reparaciones</div>
 
-				<div class="tab" role="tab" aria-controls="tab5-content" aria-label="Cerrar Sesión" tabindex="0">Mis reparaciones</div>
+				<div class="tab" role="tab" aria-controls="tab5-content" aria-label="Cerrar Sesión" tabindex="0" aria-selected="false">Mis reparaciones</div>
 
 			</nav>
 
@@ -89,62 +89,24 @@
 	</footer>
 	<!--Escrito al final para asegurarme que se carga -->
 	<script src="tabulacion_menu.js"></script>
-	<script>
+<script>
 		//funcione el intro
 		document.addEventListener('keydown', event => {
 			if (event.key === 'Enter') {
 				// Obtener la pestaña seleccionada
 				const selectedTab = tabs.querySelector('.tab[aria-selected="true"]');
 
+        console.log('--------');
+        console.log(selectedTab + 'selectedTab');
 				// Mostrar el contenido de la pestaña seleccionada
-				const tabContentId = selectedTab.getAttribute('aria-controls');
-				const tabContent = tabs.querySelector(`#${tabContentId}`);
+		const tabContentId = selectedTab.getAttribute('aria-controls');
+		const tabContent = tabs.querySelector(`#${tabContentId}`);
+        console.log(tabContentId + 'tabContentId');
+        console.log(tabContent + 'tabContent');
+
 				tabContent.style.display = 'block';
 			}
-		});
-	</script>
-<script>
-		//funcion del intro controlador de eventos keypress
-		const tabs_board = document.querySelectorAll('.tab');
-const tabContents_board = document.querySelectorAll('.tab-content');
-
-function showTabContent(index) {
-  tabContents_board.forEach(tabContent => {
-    tabContent_board.classList.remove('active');
-  });
-  tabContents_board[index].classList.add('active');
-}
-
-tabs_board.forEach((tab, index) => {
-  tab.addEventListener('click', () => {
-    tabs_board.forEach(tab => {
-      tab.classList.remove('active');
-    });
-    tab.classList.add('active');
-    showTabContent(index);
-  });
-
-  // Add event listener for keydown
-  tab.addEventListener('keydown', event => {
-    // Check if the Enter key was pressed
-    if (event.keyCode === 13) {
-      tabs_board.forEach(tab => {
-        tab.classList.remove('active');
-      });
-      tab.classList.add('active');
-      showTabContent(index);
-    }
-  });
-});
-</script>
-
-
-
-
-
-
-
-
+		});	</script>
 </body>
 
 </html>
