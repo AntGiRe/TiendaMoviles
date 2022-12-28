@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario para reparación</title>
+    <title>Insertar reparacion</title>
 </head>
 
 <body>
@@ -21,9 +21,9 @@
 
     <main>
         <!--formulario Comercial -->
-        <form action="" method="post">
+        <form action="insertarPeticion.php" method="get">
             <div>
-                <label for="name">Nombre:</label>
+                <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre">
             </div>
             <div>
@@ -31,15 +31,11 @@
                 <input type="email" name="email" id="email">
             </div>
             <div>
-                <label for="name">Tecnico:</label>
-                <input type="text" name="tecnico" id="tecnico">
-            </div>
-            <div>
-                <label for="direccion">Problema del movil:</label>
+                <label for="problema">Problema del movil:</label>
                 <textarea id="problema" name="problema"></textarea>
             </div>
             <div>
-                <label for="name">Fecha:</label>
+                <label for="fecha">Fecha:</label>
                 <input type="date" name="fecha" id="fecha">
             </div>
             <div>
