@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(isset($_SESSION['user'])){
+		echo "Bienvenido ".$_SESSION['user'];
+	}else{
+		header("Location: login.php");
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +21,7 @@
 <body>
 
 	<header>
-
+		<a href="action/logout.php">Cerrar Sesión</a>
 		<!--CABECERA DEL LOGO ....-->
 	</header>
 	<main>
