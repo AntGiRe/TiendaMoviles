@@ -22,37 +22,39 @@
 
     <main>
         <!--formulario Comercial -->
-        <form action="" method="post">
-            <div>
-                <label for="name">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
+        <div class="Contenedor">
+            <form action="" method="post">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
 
-            <div>
-                <label for="direccion">Problema del movil:</label>
-                <textarea id="problema" name="problema"></textarea>
-            </div>
-            <div>
-                <label for="name">Fecha:</label>
-                <input type="date" name="fecha" id="fecha">
-            </div>
-            <div>
-                <label for="name">Tecnico:</label>
-                <input type="text" name="tecnico" id="tecnico">
-            </div>
-            <div>
-                <label for="name">Estado:</label>
-                <input type="text" name="estado" id="estado">
-            </div>
-            <div>
-                <input type="submit" name="enviar" id="enviar">
-            </div>
+                <div>
+                    <label for="direccion">Problema del movil:</label>
+                    <textarea id="problema" name="problema"></textarea>
+                </div>
+                <div>
+                    <label for="name">Fecha:</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div>
+                    <label for="name">Tecnico:</label>
+                    <input type="text" name="tecnico" id="tecnico">
+                </div>
+                <div>
+                    <label for="name">Estado:</label>
+                    <input type="text" name="estado" id="estado">
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar">
+                </div>
 
-        </form>
+            </form>
+        </div>
 
     </main>
 
