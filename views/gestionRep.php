@@ -21,12 +21,12 @@
 			$csvArr = $csv->csvToArray();
 			foreach ($csvArr as $key => $value) {
 				echo "<tr>";
-				if($value[2] == 'Sin asignar')
+				if($value[2] == $_SESSION['user'])
 				{
 					foreach ($value as $key2 => $value2) {
 						echo "<td>".$value2."</td>";
 					}
-					echo "<td><a href='action/asignar.php?id=".$key."'>Te elijo a ti</a></td>";
+					echo "<td><a href='action/resolver.php?id=".$key."'>Resolver</a></td>";
 					echo "</tr>";
 				}
 			}
