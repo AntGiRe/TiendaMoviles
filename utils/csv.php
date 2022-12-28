@@ -16,8 +16,14 @@ class Csv{
 		return $result;
 	}
 
+	public function addArray($array){
+		$fp = fopen($this->csv_file, 'a');
+		fputcsv($fp, $array, ";");
+		fclose($fp);
+	}
+
 	public function arrayToCsv($array){
-		$fp = fopen($this->csv_file, 'w');
+		$fp = fopen($this->csv_file, 'a');
 		foreach ($array as $fields) {
 			fputcsv($fp, $fields, ";");
 		}
