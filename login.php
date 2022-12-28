@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+	session_start();
+	if(isset($_SESSION['user'])){
+		header("Location: gestion.php");
+	}
+?>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
@@ -22,7 +28,7 @@
                     <li></li>
             </ul>
 			<div class="login">
-				<h1>Hola</h1>
+				<h1>Inicia sesión</h1>
 				<form method="get" action="action/login.php">
 			<div class="form">
 				<input type="text" name="user" autocomplete="off" required />
@@ -40,7 +46,7 @@
 					</span>
 				</label>
 			</div><br>
-			<input type="submit" value="Iniciar Sesión">
+			<input type="submit" value="Entrar">
 			</form>
 			</div>
     </div >
