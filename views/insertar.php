@@ -21,29 +21,29 @@
 
     <main>
         <!--formulario Comercial -->
-        <form action="insertarPeticion.php" method="get">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="problema">Problema del movil:</label>
-                <textarea id="problema" name="problema"></textarea>
-            </div>
-            <div>
-                <label for="fecha">Fecha:</label>
-                <input type="date" name="fecha" id="fecha">
-            </div>
-            <div>
-                <input type="submit" name="enviar" id="enviar">
-            </div>
-
-        </form>
-
+        <div class="Contenedor">
+            <form action="insertarPeticion.php" method="get">
+                <div class="contenedor">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="problema">Problema del movil:</label>
+                    <textarea id="problema" name="problema"></textarea>
+                </div>
+                <div>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar">
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
