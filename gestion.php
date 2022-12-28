@@ -37,14 +37,14 @@
 
 				<div class="tab" role="tab" aria-controls="tab4-content" aria-label="Cuarta pestaña para ver la lista de reparaciones del técnico" tabindex="0" aria-selected="false">Mis reparaciones</div>
 
-				<div class="tab" role="tab" aria-controls="tab5-content" aria-label="Cerrar Sesión" tabindex="0" aria-selected="false">Mis reparaciones</div>
+				<div class="tab" role="tab" aria-controls="tab5-content" aria-label="Cerrar Sesión" tabindex="0" aria-selected="false">Salir</div>
 
 			</nav>
 
 			<div id="tab1-content" class="tab-content" role="tabpanel" aria-labelledby="tab1" aria-describedby="tab1-description">
 
 				<div id="parte1">
-					<?php include 'archivo1.php'; ?>
+					<?php include 'views/insertar.php'; ?>
 				</div>
 
 				<p id="tab1-description">Formulario de inscripcion del cliente sobre una nueva reparación</p>
@@ -53,7 +53,7 @@
 			<div id="tab2-content" class="tab-content" role="tabpanel" aria-labelledby="tab2" aria-describedby="tab2-description">
 
 				<div id="parte2">
-					<?php include 'archivo2.php'; ?>
+					<?php include 'views/editarTabla.php'; ?>
 				</div>
 
 				<p id="tab2-description">Visualización de las reparaciones para la asignación de una reparación</p>
@@ -62,7 +62,7 @@
 			<div id="tab3-content" class="tab-content" role="tabpanel" aria-labelledby="tab3" aria-describedby="tab3-description">
 
 				<div id="parte3">
-					<?php include 'archivo3.php'; ?>
+					<?php include 'views/modificarTabla.php'; ?>
 				</div>
 
 				<p id="tab3-description">Modificaciones de lista de reparaciones del técnico logeado</p>
@@ -71,7 +71,7 @@
 			<div id="tab4-content" class="tab-content" role="tabpanel" aria-labelledby="tab4" aria-describedby="tab4-description">
 
 				<div id="parte4">
-					<?php include 'archivo4.php'; ?>
+					<?php include 'views/visualizacion.php'; ?>
 				</div>
 
 				<p id="tab4-description">Visualización de lista de reparaciones del técnico logeado</p>
