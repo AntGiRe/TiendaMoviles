@@ -19,6 +19,7 @@
 	<main>
 		<div id="tabs" role="tablist">
 
+
 			<nav>
 				<div class="tab " role="tab" aria-controls="tab1-content" aria-label="Primera pestaña para insertar reparaciones de un nuevo cliente" tabindex="0"  aria-selected="true">Insertar Reparación Cliente</div>
 

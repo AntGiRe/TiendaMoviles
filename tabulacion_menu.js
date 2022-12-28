@@ -13,6 +13,7 @@ function handleTabClick(event) {
     tabContent.style.display = 'none';
   });
 
+
   // Quitar la clase "active" de todas las pestañas
   tabButtons.forEach(tabButton => {
     tabButton.classList.remove('active');
