@@ -15,11 +15,19 @@
 			}
 		}
 		if($found){
-			$_SESSION['user'] = $user;
-			header("Location: ../gestion.php");
+			if($user = "admin")
+			{
+				$_SESSION['admin'] = true;
+				header("Location: ../admin.php");
+			}
+			else
+			{
+				$_SESSION['user'] = $user;
+				header("Location: ../menu.php");
+			}
 		}else{
 			$_SESSION['error'] = "Usuario o contraseña incorrectos";
-			header("Location: ../login.php");
+			header("Location: ../inicio.php");
 		}
 	}
 ?>

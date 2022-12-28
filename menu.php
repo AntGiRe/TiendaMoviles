@@ -1,11 +1,3 @@
-<?php
-	session_start();
-	if(isset($_SESSION['user'])){
-		echo "Bienvenido ".$_SESSION['user'];
-	}else{
-		header("Location: login.php");
-	}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +13,15 @@
 <body>
 
 	<header>
+		<?php
+			session_start();
+			if(isset($_SESSION['user'])){
+				echo "Bienvenido ".$_SESSION['user'];
+			}else{
+				header("Location: inicio.php");
+			}
+		?>
 		<a href="action/logout.php">Cerrar Sesión</a>
-		<!--CABECERA DEL LOGO ....-->
 	</header>
 	<main>
 		<div id="tabs" role="tablist">
@@ -37,14 +36,12 @@
 
 				<div class="tab" role="tab" aria-controls="tab4-content" aria-label="Cuarta pestaña para ver la lista de reparaciones del técnico" tabindex="0" aria-selected="false">Mis reparaciones</div>
 
-				<div class="tab" role="tab" aria-controls="tab5-content" aria-label="Cerrar Sesión" tabindex="0" aria-selected="false">Salir</div>
-
 			</nav>
 
 			<div id="tab1-content" class="tab-content" role="tabpanel" aria-labelledby="tab1" aria-describedby="tab1-description">
 
 				<div id="parte1">
-					<?php include 'views/insertar.php'; ?>
+					<?php include 'views/formRep.php'; ?>
 				</div>
 
 				<p id="tab1-description">Formulario de inscripcion del cliente sobre una nueva reparación</p>
@@ -53,7 +50,7 @@
 			<div id="tab2-content" class="tab-content" role="tabpanel" aria-labelledby="tab2" aria-describedby="tab2-description">
 
 				<div id="parte2">
-					<?php include 'views/editarTabla.php'; ?>
+					<?php include 'views/mostrarRep.php'; ?>
 				</div>
 
 				<p id="tab2-description">Visualización de las reparaciones para la asignación de una reparación</p>
@@ -62,7 +59,7 @@
 			<div id="tab3-content" class="tab-content" role="tabpanel" aria-labelledby="tab3" aria-describedby="tab3-description">
 
 				<div id="parte3">
-					<?php include 'views/modificarTabla.php'; ?>
+					<?php include 'views/modRep.php'; ?>
 				</div>
 
 				<p id="tab3-description">Modificaciones de lista de reparaciones del técnico logeado</p>
@@ -71,22 +68,10 @@
 			<div id="tab4-content" class="tab-content" role="tabpanel" aria-labelledby="tab4" aria-describedby="tab4-description">
 
 				<div id="parte4">
-					<?php include 'views/visualizacion.php'; ?>
+					<?php include 'views/modRep.php'; ?>
 				</div>
 
 				<p id="tab4-description">Visualización de lista de reparaciones del técnico logeado</p>
-			</div>
-
-			<div id="tab5-content" class="tab-content" role="tabpanel" aria-labelledby="tab5" aria-describedby="tab5-description">
-
-				<div id="parte5">
-					<button aria-label="Cerrar sesión" onclick="if (confirm('¿Estás seguro de que quieres cerrar sesión?'))
-            /* tras https añadir ruta del login index */
-            { window.location.assign('https:login.php'); } else { /* código para mantener al usuario en la página actual es decir nada */ }">
-						Cerrar sesión</button>
-				</div>
-
-				<p id="tab5-description">Cerrar Sesión</p>
 			</div>
 
 		</div>

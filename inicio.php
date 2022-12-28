@@ -2,7 +2,7 @@
 <?php
 	session_start();
 	if(isset($_SESSION['user'])){
-		header("Location: gestion.php");
+		header("Location: menu.php");
 	}
 ?>
 <html lang="es">
