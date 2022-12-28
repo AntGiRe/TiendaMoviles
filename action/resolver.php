@@ -6,6 +6,6 @@
 		$csvArr = $csv->csvToArray();
 		unset($csvArr[$_GET['id']]);
 		$csv->arrayToCsv($csvArr);
-		header("Location: ../gestion.php");
+		header("Location: ../menu.php");
 	}
 ?>

@@ -26,7 +26,7 @@
 				foreach ($value as $key2 => $value2) {
 					echo "<td>".$value2."</td>";
 				}
-				echo "<td><a href='action/eliminarOrden.php?id=".$key."'>Resolver</a></td>";
+				echo "<td><a href='action/resolver.php?id=".$key."'>Resolver</a></td>";
 				echo "</tr>";
 			}
 		?>
