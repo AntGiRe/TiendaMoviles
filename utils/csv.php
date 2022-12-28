@@ -29,5 +29,13 @@ class Csv{
 		}
 		fclose($fp);
 	}
+
+	public function changeCSV($array){
+		$fp = fopen($this->csv_file, 'w');
+		foreach ($array as $fields) {
+			fputcsv($fp, $fields, ";");
+		}
+		fclose($fp);
+	}
 }
 ?>

@@ -4,8 +4,8 @@
 		include("../utils/csv.php");
 		$csv = new csv('../datos_clientes.csv');
 		$csvArr = $csv->csvToArray();
-		unset($csvArr[$_GET['id']]);
-		$csv->arrayToCsv($csvArr);
+		$csvArr[$_GET['id']][5] = "Resuelto";
+		$csv->changeCSV($csvArr);
 		header("Location: ../menu.php");
 	}
 ?>

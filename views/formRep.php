@@ -23,7 +23,7 @@
     <main>
         <!--formulario Comercial -->
         <div class="Contenedor">
-            <form action="insertarPeticion.php" method="get">
+            <form action="action/insertarCSV.php" method="get">
                 <div class="contenedor">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
