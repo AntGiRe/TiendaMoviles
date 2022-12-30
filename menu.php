@@ -28,14 +28,15 @@
 
 
 			<nav>
-				<div class="tab " role="tab" aria-controls="tab1-content" aria-label="Primera pestaña para insertar reparaciones de un nuevo cliente" tabindex="0"  aria-selected="true">Insertar Reparación Cliente</div>
+				<fieldset>
+					<a href="#tab1-content"   class="tab " role="tab" aria-controls="tab1-content" aria-label="Primera pestaña para insertar reparaciones de un nuevo cliente" tabindex="0"  aria-selected="true">Insertar Reparación Cliente</a>
 
-				<div class="tab " role="tab" aria-controls="tab2-content" aria-label="Segunda pestaña para asignarse reparaciones por parte del técnico" tabindex="0" aria-selected="false">Reparar pendientes</div>
+					<a href="#tab2-content" class="tab " role="tab" aria-controls="tab2-content" aria-label="Segunda pestaña para asignarse reparaciones por parte del técnico" tabindex="0" aria-selected="false">Reparar pendientes</a>
 
-				<div class="tab" role="tab" aria-controls="tab3-content" aria-label="Tercera pestaña para gestionar lo referentes a las reparaciones" tabindex="0" aria-selected="false">Gestión Reparaciones Técnico</div>
+					<a href="#tab3-content" class="tab" role="tab" aria-controls="tab3-content" aria-label="Tercera pestaña para gestionar lo referentes a las reparaciones" tabindex="0" aria-selected="false">Gestión Reparaciones Técnico</a>
 
-				<div class="tab" role="tab" aria-controls="tab4-content" aria-label="Cuarta pestaña para ver la lista de reparaciones del técnico" tabindex="0" aria-selected="false">Mis reparaciones</div>
-
+					<a href="#tab4-content" class="tab" role="tab" aria-controls="tab4-content" aria-label="Cuarta pestaña para ver la lista de reparaciones del técnico" tabindex="0" aria-selected="false">Mis reparaciones</a>
+				</fieldset>
 			</nav>
 
 			<div id="tab1-content" class="tab-content" role="tabpanel" aria-labelledby="tab1" aria-describedby="tab1-description">
