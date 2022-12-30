@@ -20,6 +20,9 @@
 			}else{
 				header("Location: inicio.php");
 			}
+
+			include("utils/csv.php");
+			$csv = new csv('datos_clientes.csv');
 		?>
 		<a href="action/logout.php">Cerrar Sesión</a>
 	</header>
@@ -69,7 +72,7 @@
 			<div id="tab4-content" class="tab-content" role="tabpanel" aria-labelledby="tab4" aria-describedby="tab4-description">
 
 				<div id="parte4">
-					<?php include 'views/modRep.php'; ?>
+					<?php include 'views/gestionRep.php'; ?>
 				</div>
 
 				<p id="tab4-description">Visualización de lista de reparaciones del técnico logeado</p>

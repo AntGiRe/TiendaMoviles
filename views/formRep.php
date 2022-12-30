@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inc/style.css">
     <title>Formulario de reparacion</title>
 </head>
 
@@ -22,7 +23,7 @@
     <main>
         <!--formulario Comercial -->
         <div class="Contenedor">
-            <form action="insertarPeticion.php" method="get">
+            <form action="action/insertarCSV.php" method="get">
                 <div class="contenedor">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
